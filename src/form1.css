@@ -1,0 +1,118 @@
+.form-container {
+  max-width: 1500px;  /* Aumenta un poco el ancho máximo para más espacio */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;  /* Fondo suave para destacar la sección */
+  border-radius: 10px;  /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave para elevar la sección */
+}
+.bolded { font-weight: bold; }
+.form-group {
+  margin-bottom: 20px;  /* Aumenta el espaciado entre grupos de formulario */
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;  /* Aumenta el espacio entre la etiqueta y el campo */
+  font-weight: 600;  /* Hace que las etiquetas sean un poco más visibles */
+  color: #333;  /* Color de texto más oscuro para mejor legibilidad */
+}
+
+.form-input,
+.form-select {
+  width: 100%;
+  padding: 10px;  /* Aumenta el padding para más espacio dentro del campo */
+  box-sizing: border-box;
+  border: 1px solid #ddd;  /* Borde suave */
+  border-radius: 5px;  /* Bordes redondeados */
+  background-color: #fff;  /* Fondo blanco */
+  transition: border-color 0.2s ease-in-out;  /* Transición suave al enfocar */
+}
+.form-select {
+  max-width: 100%; /* Asegura que el select no se desborde */
+  white-space: nowrap; /* Evita que el texto se envuelva */
+  overflow: hidden; /* Oculta el texto que se desborda */
+  text-overflow: ellipsis; /* Añade puntos suspensivos al texto desbordado */
+}
+
+.form-input:focus,
+.form-select:focus {
+  border-color: #007bff;  /* Borde azul al enfocar */
+  outline: none;  /* Elimina el outline predeterminado */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);  /* Sombra azul suave */
+}
+
+.sub-group {
+  margin-top: 10px;  /* Añade un espacio superior en los subgrupos */
+  padding-left: 15px;  /* Indentación para subgrupos */
+  border-left: 3px solid #ddd;  /* Línea visual para subgrupos */
+}
+
+.sub-group p {
+  margin-bottom: 5px;
+  color: #555;  /* Color de texto más suave */
+}
+
+#btn_enviar {
+  display: block;
+  margin: 30px auto;
+  padding: 12px 25px;
+  background-color: #28a745;  /* Verde para destacar la acción */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;  /* Tamaño de fuente adecuado */
+  transition: background-color 0.2s ease-in-out;  /* Transición suave al pasar el ratón */
+}
+
+#btn_enviar:hover {
+  background-color: #218838;  /* Verde más oscuro al pasar el ratón */
+}
+
+/* Estilos para los errores */
+.error-text {
+  color: #dc3545;  /* Rojo más fuerte para visibilidad */
+  font-size: 0.875em;
+  margin-top: 5px;  /* Más espacio sobre el texto de error */
+}
+
+/* Estilos generales para el formulario y botones */
+.clear-button {
+  margin-top: 20px;
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.download-section {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.download-section.show {
+  max-height: 300px;
+}
+/* Iconos o imagenes de mis imagenes de los botones de descarga. */
+.download-item {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.download-icon {
+  width: 32px;
+  height: 45px;
+  margin-right: 8px;
+}
+
+/* tabla de pago de inscripxiones */
+.payment-table th, .payment-table td {
+  padding: 10px; /* Controla el espacio interno de las celdas */
+}
+
